@@ -38,22 +38,29 @@
     <meta name="theme-color" content="#ffffff">
 
 
-    <link rel="stylesheet" href="style.css">
+
+    <style type="text/css">
+        #app_img {
+            position: absolute;
+            left: 25%;
+            width: 50%;
+        }
+
+        #app_download {
+            position: absolute;
+            width: 150px;
+            left: 65%;
+            top: 80%;
+            z-index: 10;
+        }
+
+    </style>
 </head>
 <body>
     <div id="wrap"> 
-        <div id="app_img"><img id="app_img_real" src="./imgs/screenshot.png"></div>
-        <div class="top_line"></div>
-        <div class="inner_wrap">
-            
-            <div id="top"><img src="./imgs/logo.png" width="100" height="100"></div>
-            <div id="middle"> 
-                <div id="app_download">
-                    <div class="appstore"><a href="https://apps.apple.com/app/id1586753437" target="_blank"><img src="./imgs/download_appstore.png"></a></div>
-                </div>
-                
-            </div>
-        </div>
+        <div ><img id="app_img" src="./imgs/screenshot.png"></div>
+        <div class="appstore"><a href="https://apps.apple.com/app/id1586753437" target="_blank"><img id="app_download" src="./imgs/download_appstore.png"></a></div>
+        
     </div>
 
 </body>
